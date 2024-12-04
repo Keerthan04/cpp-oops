@@ -1,0 +1,20 @@
+/*
+modes of inheritance
+
+            Derived class   Derived class   Derived class
+Base class   public          protected       private
+Private      not inherited   not inherited   not inherited
+Protected    protected       protected       private
+Public       public          protected       private
+
+
+The public mode specifies that all public members of the base class are inherited as public members of the derived class. The protected mode specifies that all public members of the base class are inherited as protected members of the derived class. The private mode specifies that all public members of the base class are inherited as private members of the derived class.
+
+so if derived class we inherit as public then the base class properties i.e if private then wont be inherited if public it will be inherited as public and if protected then will be inherited as protected.
+
+if derived class we inherit as protected then the base class properties i.e if private then wont be inherited if public it will be inherited as protected and if protected then will be inherited as protected.
+
+if derived class we inherit as private then the base class properties i.e if private then wont be inherited if public it will be inherited as private and if protected then will be inherited as private.
+
+so we see that the private members of the base class are never inherited in the derived class. so if we want to access like inherit those private to derived class then we will make those properties as atleast protected.so that they can be inherited in the derived class and accessed only in the derived class.
+*/
