@@ -38,5 +38,9 @@ int main(){
     c.hello();//so this will print child class function(overrides the parent class function)
     Parent p;
     p.hello();//this will print parent class function
+    //when virtual main we do is this 
+    Parent *ptr = new Child();
+    ptr->hello(); // This will call Child's hello() due to virtual function
+    delete ptr; // Don't forget to delete the dynamically allocated memory
     return 0;
 }
